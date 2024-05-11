@@ -5,40 +5,81 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Heading</title>
     <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
+    <style>
+
+#container{
+    height:500px;
+    width: 500px;
+    background-color: aqua;
+    position:relative;
+            
+        }
+
+#child{
+
+
+    height:100px;
+    width:100px;
+    background-color: red;
+    position:absolute;
+}        
+        
+        </style> 
 
 </head>
+
+
 <body>
-    <div class ="abc" style="background-color: aqua; border: 2px solid black;" >
-
-<!-- Hello testing
-
-hjsgdhjasdghjasga
-<br>
-<br>
 
 
-asdjhasdjkhadsjkas
-<br>
+    <div id="container">
+        <div  id="child">
 
-<br>
-asdasjdksasbsdbkjsdb
-<br>
-<br>
-sasansadms,sm,sdaaaaaaaaaa
-<br>
-<br>
-
-<s>sadsal;assssssssa</s>
-<br> -->
-
-<ul>
-    <li> hii</li>
-    <li class ='pandit'> hii1</li>
-    <li  class ='pandit'> hii2</li>
-    <li> hii3</li>
-    <li> hii4</li>
-</ul>
+        </div >
     </div>
+
+    <p><button onclick="Move()"> Click me to move  </button> </p>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+
+
+function Move(){
+
+ let pos=0;
+const elem=document.getElementById("child");
+const id=setInterval(frame,10);
+
+
+function frame(){
+    if(pos==400)
+    {
+
+        clearInterval(id);
+    }
+    pos++;
+    elem.style.top=pos+'px';
+    elem.style.left=pos++ +'px';
+}
+
+
+
+}
+   
+</script>
 </body>
+
+
+<!-- <script src="script.js"></script> -->
 </html>

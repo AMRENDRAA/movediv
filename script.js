@@ -378,7 +378,19 @@
 
 // var a=  document.querySelector('.pandit')
 // console.log(a.previousElementSibling)
-const aul = document.querySelector('ul');
+// const aul = document.querySelector('ul');
 
 
-aul.remove();
+// aul.remove();
+// var a=document.querySelectorAll('.pandit');
+// a.innerHTML= '<b> Panbit</b>';
+// console.log(a);
+// console.log("sdhjgd");
+
+var a= document.querySelector('.pandit');
+
+
+
+
+
+console.log(pandit.getAttribute('me'));
