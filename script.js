@@ -387,10 +387,19 @@
 // console.log(a);
 // console.log("sdhjgd");
 
-var a= document.querySelector('.pandit');
+// var a= document.querySelector('.pandit');
 
 
 
 
 
-console.log(pandit.getAttribute('me'));
+// console.log(pandit.getAttribute('me'));
+
+function Move(){
+    var a=document.getElementById("container");
+    a.style.backgroundColor="red";
+    }
+    function changecolor(){
+        var a=document.getElementById("container");
+        a.style.backgroundColor="green";
+        }
